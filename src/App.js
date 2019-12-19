@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react'
 import Clock from './Clock';
 
-
-function App() {
-  return (
-    <div >
-     <Clock />
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Clock />
+      </div>
+    )
+  }
 }
 
-export default App;
