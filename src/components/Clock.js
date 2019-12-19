@@ -21,9 +21,9 @@ export default class Clock extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Clock</h1>
-        <h2>It is {this.state.time.toLocaleTimeString()}.</h2>
+            <div className="clock">
+                <h1>Current Time</h1>
+                  <h2>It is {this.state.time.toLocaleTimeString()}.</h2>
             </div>
         )
     }
