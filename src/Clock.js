@@ -1,11 +1,10 @@
 import React from 'react';
-import Clock from './Clock';
 
 
 function App() {
   return (
     <div >
-     <Clock />
+     <h1>Clock</h1>
     </div>
   );
 }
