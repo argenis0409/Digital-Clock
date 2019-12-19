@@ -5,6 +5,20 @@ export default class Clock extends Component {
        time: new Date()
     }
 
+    ticking() {
+      this.setState({
+          time: new Date()
+      });
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(() => this.ticking(), 1000);
+    }
+  
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
     render() {
         return (
             <div>
